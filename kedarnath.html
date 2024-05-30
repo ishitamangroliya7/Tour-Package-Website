@@ -278,29 +278,31 @@
                 </div>
             </section>
 
-            <div class="modal fade" id="bookTourModal" tabindex="-1" aria-labelledby="bookTourModalLabel" aria-hidden="true">
+           <div class="modal fade" id="bookTourModal" tabindex="-1" aria-labelledby="bookTourModalLabel"
+                aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h4 class="modal-title" id="bookTourModalLabel">Book Tour</h4>
+                            <h4 class="modal-title secondary" id="bookTourModalLabel">Book Tour</h4>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                            <form>
-                                <div class="mb-3">
-                                   <small>Log in or Sign-up for a Booking and to redeem available offers.
-                                    <a class="secondary" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a> </small>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="tourPhone" class="form-label">Phone</label>
-                                    <input type="phone" class="form-control" id="tourPhone" placeholder="+123456789">
-                                </div>
+                            <div class="loginBox">
                                 <div class="mb-4">
-                                    <label for="tourDate" class="form-label">Preferred Date</label>
-                                    <input type="date" class="form-control" id="tourDate">
+                                    <span>Log in or Sign-up for a Booking and to redeem available offers.
+                                        <a class="secondary" href="login.html">Login</a> </span>
                                 </div>
-                                <a href="book.html"><button type="button" class="btn theme-btn w-100">Book</button></a>
-                            </form>
+                                <div class="inputBox">
+                                    <input type="text" id="user" class="inputField" required>
+                                    <label for="user" class="label">Name</label>
+                                </div>
+                                <div class="inputBox">
+                                    <input type="date" id="date" class="inputField" required>
+                                </div>
+                                <div class="inputBox">
+                                    <a href="book.html"><input type="submit" class="theme-btn w-100" value="Book"></a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
